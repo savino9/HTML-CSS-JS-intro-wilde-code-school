@@ -1,0 +1,20 @@
+body {
+  padding:20px;  
+}
+
+#memePicture {
+  position: relative;
+  max-width: 300px;
+}
+
+#memeText {
+  background-color: transparent;
+  font-size: 40px;
+  font-family: "Impact";
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  width: 300px;
+  position:absolute;
+  left: 15px;
+  top: 200px;
+}

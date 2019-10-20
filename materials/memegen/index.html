@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>memegen</title>
+</head>
+
+<body>
+  <form>
+    <label for="userText">MEME text:</label>
+    <input type="text" id="userText" maxlength="70" onInput="update_text()" />
+    <br>
+    <label for="userPicture">Upload image</label>
+    <input type="file" id="userPicture" onChange="update_image()" />
+  </form>
+  
+  <br>
+  
+  <div id="memePicture">
+    <img src="https://via.placeholder.com/500.png?text=Placeholder+MEME" height="300" width="300" />
+    <div id="memeText">
+      MEME text here
+    </div>
+  </div>
+  
+  <br>
+  
+  <button id="saveMeme" class="btn btn-primary">Save</button>
+  
+  <section id="result">
+    <div>
+      <img src="" id="screenshot">
+    </div>
+    <!-- <pre id="size"></pre> -->
+    <!--  pre tag defines preformatted text -->
+  </section>
+
+  <script src="main.js"></script>
+  <script src="html2canvas.js"></script>
+</body>
+</html>

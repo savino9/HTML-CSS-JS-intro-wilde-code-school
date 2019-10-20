@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>workshop-wilde-code</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+      body{background-image:url(wilde_bg.jpeg);}
+  </style>
+  <style>
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="./sky.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section data-background-image="./wilde_bg.jpeg" id="title-slide">
+  <h1 class="title">WEB DEVELOPMENT</h1>
+</section>
+
+<section data-background-image="./wilde_bg.jpeg" id="dev-resources" class="slide level1">
+<h1>Dev Resources</h1>
+<ol type="1">
+<li>MDN mozilla</li>
+<li>Web Fundamentals</li>
+<li>stackoverflow</li>
+<li>freeCodeCamp</li>
+<li>w3schools</li>
+<li>smashingmagazine</li>
+<li>alligator.io</li>
+<li>css-tricks</li>
+</ol>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section" class="slide level1">
+<h1></h1>
+<h2 id="your-new-best-friends">Your new best friends 👫</h2>
+<p>Official documentation + Developer Tools + IDE (Integrated development environment)</p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="learn-web-development" class="slide level1">
+<h1>Learn web development:</h1>
+<p><a href="https://developer.mozilla.org/en-US/docs/Learn">MDN</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-1" class="slide level1">
+<h1></h1>
+<h2 id="www-vs-worldwideweb">WWW vs WorldWideWeb</h2>
+<p><strong><em>WorldWideWeb</em></strong></p>
+<p>was the first web browser, developed in 1990 by <strong><em>Tim Berners-Lee</em></strong> for the NeXT Computer  (at the same time as the first web server for the same machine) and introduced to his colleagues at CERN in March 1991.</p>
+<p>(later renamed to Nexus to avoid confusion between the software and the World Wide Web)</p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="first-web-page-ever-created" class="slide level1">
+<h1>First web page ever created:</h1>
+<p><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">The World Wide Web project</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-2" class="slide level1">
+<h1></h1>
+<h2 id="how-to-open-devtools">How to open Devtools:</h2>
+<p>Command+Option+C (Mac) Control+Shift+C (Windows, Linux, Chrome OS)</p>
+<p><strong>Open the last panel you had open:</strong></p>
+<p>Command+Option+I (Mac) Control+Shift+I (Windows, Linux, Chrome OS)</p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-3" class="slide level1">
+<h1></h1>
+<p><strong>Some of the HTML tags:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">&lt;p&gt;&lt;/p&gt;</span> <span class="co">&lt;!-- paragraph --&gt;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">&lt;dl&gt;&lt;/dl&gt;</span> <span class="co">&lt;!-- definition list  --&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">&lt;dt&gt;&lt;/dt&gt;</span> <span class="co">&lt;!-- definition terms/names  --&gt;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">&lt;dd&gt;&lt;/dd&gt;</span> <span class="co">&lt;!-- conjunction tag --&gt;</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">&lt;a&gt;&lt;/a&gt;</span> <span class="co">&lt;!-- anchor tag used for links --&gt;</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="kw">&lt;img</span> <span class="kw">/&gt;</span> <span class="co">&lt;!-- image tag --&gt;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="kw">&lt;input</span> <span class="kw">/&gt;</span> <span class="co">&lt;!-- input tag  --&gt;</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">&lt;link</span> <span class="kw">/&gt;</span> <span class="co">&lt;!-- links --&gt;</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="kw">&lt;meta</span> <span class="kw">/&gt;</span> <span class="co">&lt;!-- metadata tag --&gt;</span></a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-4" class="slide level1">
+<h1></h1>
+<h2 id="nowadays">Nowadays:</h2>
+<p><a href="https://www.cssdesignawards.com/">cssdesignawards</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="html" class="slide level1">
+<h1>HTML</h1>
+<h2 id="hypertext-markup-language">(Hypertext Markup Language)</h2>
+<p>“HTML is the standard markup language for documents designed to be displayed in a web browser” <a href="https://en.wikipedia.org/wiki/HTML">wikipedia.org</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-5" class="slide level1">
+<h1></h1>
+<h2 id="more-example-of-html-tags">More example of HTML TAGS:</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">&lt;html&gt;&lt;/html&gt;</span> <span class="co">&lt;!-- root --&gt;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">&lt;h1&gt;&lt;/h1&gt;</span> <span class="co">&lt;!-- header --&gt;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">&lt;div</span><span class="ot"> attribute=</span><span class="st">“”</span><span class="kw">&gt;&lt;/div&gt;</span> <span class="co">&lt;!-- container --&gt;</span></a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-6" class="slide level1">
+<h1></h1>
+<h2 id="tag-list">Tag list:</h2>
+<p><a href="https://www.w3schools.com/tags/">tags</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-7" class="slide level1">
+<h1></h1>
+<h2 id="structure-of-html-page">Structure of html page:</h2>
+<ul>
+<li>doctype</li>
+<li>html</li>
+<li>head
+<ul>
+<li>metatag</li>
+<li>links</li>
+</ul></li>
+<li>body
+<ul>
+<li>content</li>
+</ul></li>
+</ul>
+<p>open myFirstHtmlExplained.html</p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="css" class="slide level1">
+<h1>CSS</h1>
+<h2 id="cascading-style-sheets">(Cascading Style Sheets)</h2>
+<p>The code you use to style your webpage.</p>
+<ul>
+<li>for example, to alter the font, colour, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features</li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-8" class="slide level1">
+<h1></h1>
+<h2 id="css-1">CSS</h2>
+<h3 id="lets-you-apply-styles-selectively-to-elements-in-html-documents.">lets you apply styles selectively to elements in HTML documents.</h3>
+<ul>
+<li>for example, to select all the paragraph elements on an HTML page and turn the text within them red, you’d write this CSS:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb3-1" title="1">p {</a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="kw">color</span>: <span class="cn">red</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3">}</a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-9" class="slide level1">
+<h1></h1>
+<figure>
+<img data-src="https://mdn.mozillademos.org/files/9461/css-declaration-small.png" alt="css declaration" /><figcaption>css declaration</figcaption>
+</figure>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-10" class="slide level1">
+<h1></h1>
+<h2 id="css-selectors">CSS selectors </h2>
+<p>define the elements to which a set of CSS rules apply. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">css selectors</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-11" class="slide level1">
+<h1></h1>
+<h2 id="box-model">Box-model:</h2>
+<p>All HTML elements can be considered as boxes. In CSS, the term “box model” is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+<p><a href="https://www.w3schools.com/css/css_boxmodel.asp">css box-model</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-12" class="slide level1">
+<h1></h1>
+<p>You can define the value of: margin, padding, width, height, etc.</p>
+<ul>
+<li><strong>%</strong>(percentage)</li>
+<li><strong>rem</strong>(root em)</li>
+<li><strong>em</strong>(called: unit of typography)</li>
+<li><strong>px</strong>(pixel)</li>
+<li><strong>vh</strong>(visual height)</li>
+<li><strong>vw</strong>(visual width)</li>
+</ul>
+<p>Interesting article about rem and em: <a href="https://zellwk.com/blog/rem-vs-em/">rem vs em</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-13" class="slide level1">
+<h1></h1>
+<h2 id="how-to-use-css">How to use css?</h2>
+<ul>
+<li><p>Inline css (NOT RECOMMENDED)</p></li>
+<li><p>style TAG with attribute: type=“text/css”</p></li>
+<li><p>External file/s using the link tag</p></li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-14" class="slide level1">
+<h1></h1>
+<p><strong><em>Styling is fun!</em></strong>… but keep in mind:</p>
+<p>CSS can and will <strong>render differently</strong> in various browsers causing numerous headaches.</p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-15" class="slide level1">
+<h1></h1>
+<h2 id="dont-worry">Don’t worry!</h2>
+<p>we’re developers we’ve tools for everything :)</p>
+<p><a href="https://caniuse.com/">caniuse</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-16" class="slide level1">
+<h1></h1>
+<h2 id="basic-css-positioning">Basic css positioning:</h2>
+<ul>
+<li><p><strong>static</strong>: the element is positioned according to the normal flow of the document</p></li>
+<li><p><strong>relative</strong>: same as static and then offset is relative to itself based on the values of top, right, bottom, and left.</p></li>
+<li><p><strong>absolute</strong>: the element is removed from the normal document flow and it’s relative to his closest positioned ancestor, if any; otherwise, it’s relative to the initial containing block.</p></li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-17" class="slide level1">
+<h1></h1>
+<p>Positioning continue…</p>
+<ul>
+<li><strong>fixed</strong>: The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, which means it always stays in the same place even if the page is scrolled.</li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-18" class="slide level1">
+<h1></h1>
+<ul>
+<li><strong>sticky</strong>: Sticky positioning can be thought of as a hybrid of relative and fixed positioning. A common use for sticky positioning is for the headings in an alphabetized list. The “B” heading will appear just below the items that begin with “A” until they are scrolled offscreen.</li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-19" class="slide level1">
+<h1></h1>
+<h2 id="flexbox-to-rescue">Flexbox to rescue</h2>
+<p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-20" class="slide level1">
+<h1></h1>
+<h2 id="learn-css-playing-some-games">Learn css playing some games:</h2>
+<ul>
+<li><p><a href="https://flukeout.github.io/">css game</a></p></li>
+<li><p><a href="http://flexboxfroggy.com/">css game flexbox</a></p></li>
+<li><p><a href="http://www.flexboxdefense.com/">css game flexbox2</a></p></li>
+<li><p><a href="http://cssgridgarden.com/">css grid</a></p></li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="js-javascript" class="slide level1">
+<h1>JS (Javascript)</h1>
+<p>2 min video:</p>
+<p><a href="https://www.youtube.com/watch?v=nItSSTwBvSU">what is js?</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-21" class="slide level1">
+<h1></h1>
+<p><strong>JS Games</strong>: <a href="http://hexgl.bkcore.com/play/">hexgl</a></p>
+<p><strong>JS robotic</strong>: <a href="http://johnny-five.io/">jonny-five</a></p>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-22" class="slide level1">
+<h1></h1>
+<h2 id="variables">Variables:</h2>
+<p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : <strong><em>local</em></strong> variable and <strong><em>global</em></strong> variable.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">var</span> email <span class="op">=</span> <span class="st">&quot;email@gmail.com&quot;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">let</span> tel <span class="op">=</span> <span class="dv">005382193</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="kw">let</span> admin <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="kw">const</span> pi <span class="op">=</span> <span class="fl">3.14</span><span class="op">;</span></a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-23" class="slide level1">
+<h1></h1>
+<h2 id="datatype-in-js">Datatype in js:</h2>
+<ul>
+<li><p><strong>Boolean</strong> — true or false</p></li>
+<li><p><strong>Number</strong> — integers, floats, etc</p></li>
+<li><p><strong>String</strong> — an array of characters i.e words</p></li>
+<li><p><strong>Symbol</strong> — a unique value that’s not equal to any other value</p></li>
+<li><p><strong>Null</strong> — no value</p></li>
+<li><p><strong>Undefined</strong> — a declared variable but hasn’t been given a value</p></li>
+</ul>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-24" class="slide level1">
+<h1></h1>
+<h2 id="lets-try-something-in-the-console">Lets try something in the console</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">typeof</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">typeof</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="kw">typeof</span> <span class="kw">undefined</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="kw">typeof</span> <span class="st">&quot;a&quot;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="kw">typeof</span> <span class="at">Symbol</span>(<span class="st">&quot;a&quot;</span>)</a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-25" class="slide level1">
+<h1></h1>
+<p>Everything else is an Object type.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">typeof</span> <span class="kw">null</span>   </a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="co">//“object” </span></a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-26" class="slide level1">
+<h1></h1>
+<h2 id="what-is-an-object-in-js">What is an object in JS?</h2>
+<p>we can consider objects in Javascript as special kind of variables that contains more information</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1">const person <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="dt">firstName</span><span class="op">:</span><span class="st">&quot;John&quot;</span><span class="op">,</span> </a>
+<a class="sourceLine" id="cb7-3" title="3">  <span class="dt">lastName</span><span class="op">:</span><span class="st">&quot;Doe&quot;</span><span class="op">,</span> </a>
+<a class="sourceLine" id="cb7-4" title="4">  <span class="dt">age</span><span class="op">:</span><span class="dv">50</span><span class="op">,</span> </a>
+<a class="sourceLine" id="cb7-5" title="5">  <span class="dt">eyeColor</span><span class="op">:</span><span class="st">&quot;blue&quot;</span></a>
+<a class="sourceLine" id="cb7-6" title="6">  <span class="co">//key : value pairs</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="op">};</span> </a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-27" class="slide level1">
+<h1></h1>
+<h2 id="functions">Functions:</h2>
+<p>Set of instructions that always return a value/result</p>
+<p><strong>Functions declaration</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">function</span> <span class="at">name_of_the_function</span> (parameters) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="co">// instructions</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="op">}</span></a></code></pre></div>
+<p><strong>How to use a function?</strong> Once it’s declared you can call a function:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">name_of_the_function</span> (optional_parameter)</a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-28" class="slide level1">
+<h1></h1>
+<p>Let’s have some fun with js!</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="va">document</span>.<span class="at">designMode</span> <span class="op">=</span> <span class="st">&quot;on&quot;</span><span class="op">;</span></a></code></pre></div>
+</section>
+<section data-background-image="./wilde_bg.jpeg" id="section-29" class="slide level1">
+<h1></h1>
+<p>THANK YOU FOR YOU TIME!</p>
+<figure>
+<a href="https://www.linkedin.com/in/savinorasola/"><img data-src="./logo_vector.png" alt="Savino Rasola" /><figcaption>Savino Rasola</figcaption></a>
+</figure>
+</section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        backgroundTransition: 'none',
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
